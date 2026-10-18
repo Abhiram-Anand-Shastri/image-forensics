@@ -16,6 +16,8 @@ with col_a:
 with col_b:
     original = st.file_uploader("Original / similar image (optional)",
                                 type=["jpg", "jpeg"], key="original")
+st.warning("⚠️ Caution: For best performance, upload images of 1280×720 pixels or smaller. "
+           "Larger images may cause the copy-move analysis to run very slowly.")
 
 if suspect is None:
     st.info("Upload the available image to begin. Add an original on the right to also compare.")
